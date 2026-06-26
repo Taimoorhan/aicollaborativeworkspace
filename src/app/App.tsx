@@ -149,17 +149,17 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-white overflow-hidden min-h-screen flex flex-col items-center justify-start pt-[140px] pb-[60px] px-5">
+    <section className="relative bg-white/70 backdrop-blur-xl overflow-hidden min-h-screen flex flex-col items-center justify-start pt-[140px] pb-[60px] px-5">
       {/* Grid background */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
           backgroundSize: "46px 46px",
         }}
       />
       {/* Radial fade */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(255,255,255,0) 0%, #ffffff 70%)" }}
+        style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,0.55) 70%)" }}
       />
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
