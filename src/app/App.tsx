@@ -631,7 +631,12 @@ function Footer() {
             </a>
           ))}
         </div>
-
+        <div className="mb-10 text-center">
+          <p className="mx-auto max-w-2xl font-['Kanit',sans-serif] font-bold text-[clamp(1.75rem,5vw,3rem)] text-transparent select-none"
+            style={{ WebkitTextStroke: '1px rgba(0,0,0,0.08)' }}>
+            Agile Collaborative AI
+          </p>
+        </div>
         <div className="border-t border-black/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-['Kanit',sans-serif] text-sm text-[rgba(60,64,67,0.6)]">
             © 2024 Aetheris Intelligence Systems. Built for the agentic era.
@@ -643,13 +648,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Watermark */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none">
-        <p className="font-['Kanit',sans-serif] font-bold text-[clamp(2rem,8vw,6rem)] text-transparent select-none whitespace-nowrap"
-          style={{ WebkitTextStroke: "1px rgba(0,0,0,0.04)" }}>
-          Agile Collaborative AI
-        </p>
-      </div>
     </footer>
   );
 }
