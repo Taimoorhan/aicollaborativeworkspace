@@ -5,9 +5,9 @@ import { Menu, X, ArrowRight, Zap, Brain, Network } from "lucide-react";
 import svgPathsBento from "@/imports/SectionTheSolutionBentoGridStyle/svg-f22y1i6wwd";
 import imgKnowledgeGraph from "@/imports/SectionTheSolutionBentoGridStyle/63050e281673be4722e84f74c4f99fc5abc5d17e.png";
 
+import svgPathsLogo from "@/imports/LandingPage/svg-gm94mwxro1";
 import imgShadow from "@/imports/LandingPage/cb97722bf8f6997018abb02808e20009fbb69fea.png";
 import imgMacBookPro16 from "@/imports/LandingPage/590d59e746e6e2148986c4d0850c4434393b07c0.png";
-import imgLogo from "@/imports/LandingPage/463412bfb851855cb42653bd22fcd39af9a5cd4f.png";
 import imgScreenMockupReplaceFill from "@/imports/LandingPage/edefd17a1dc25eeecd030b0ecc86070620be23b3.png";
 import imgPartnerLogo from "@/imports/LandingPage/60b452b72f94d1081d67e3ac229dc34170aaaae8.png";
 import imgPartnerLogo1 from "@/imports/LandingPage/028fdf04a6f3bfaf2c219d6b8db21e22f38bd1bd.png";
@@ -21,6 +21,16 @@ import imgBibusAgLogo from "@/imports/LandingPage/4e3c8f159c65073da573f6a34b22fc
 gsap.registerPlugin(ScrollTrigger);
 
 type Language = "de" | "en";
+
+function BrandMark() {
+  return (
+    <div className="w-8 h-8 flex items-center justify-center">
+      <svg className="w-6 h-6" viewBox="0 0 25.5518 28" fill="none" aria-hidden="true">
+        <path d={svgPathsLogo.p3b122200} fill="#fff" />
+      </svg>
+    </div>
+  );
+}
 
 const translations = {
   de: {
@@ -246,9 +256,7 @@ function NavBar({ language, setLanguage }: { language: Language; setLanguage: (v
       >
         <div className="relative flex items-center justify-between px-5 sm:px-7 h-[60px]">
           <div className="flex items-center gap-3 shrink-0 z-10">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <img src={imgLogo} alt="Logo" className="w-7 h-7 object-contain" />
-            </div>
+            <BrandMark />
             <span className="font-['Kanit',sans-serif] font-bold text-white text-lg sm:text-xl leading-none whitespace-nowrap">
               Agile Collaborative AI
             </span>
